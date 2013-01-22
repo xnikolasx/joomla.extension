@@ -6,30 +6,49 @@ defined('_JEXEC') or die('Restricted access');
 jimport('joomla.application.component.modelitem');
  
 /**
- * HelloWorld Model
+ * Octocats Model
  */
 class OctocatsModelOctocats extends JModelItem
 {
         /**
-         * @var string msg
+         * @var string messages
          */
-        protected $msg;
+        protected $messages;
+
+        /**
+         * Returns a reference to the a Table object, always creating it.
+         *
+         * @param       type    The table type to instantiate
+         * @param       string  A prefix for the table class name. Optional.
+         * @param       array   Configuration array for model. Optional.
+         * @return      JTable  A database object
+         * @since       2.5
+         */
+        public function getTable($type = 'Octocats', $prefix = 'OctocatsTable', $config = array()) 
+        {
+                return JTable::getInstance($type, $prefix, $config);
+        }
  
         /**
          * Get the message
          * @return string The message to be displayed to the user
          */
-        public function getMsg() 
+        public function getMsg($id = 1) 
         {
-                $octokitten_koans = array(
-                        "Как же я смогу показать Вам Дзен, если Вы сначала не опустошили Вашу чашу?",
-                        "Если ты действительно любишь меня, подойди и обними меня.",
-                        "Неужели ты считаешь меня нечеловеком только потому, что я не пью отравы?",
-                        "Хочешь получить просветление - сначала пожертвуй ленью.",
-                        "Хочешь победить - создай условия выгодные тебе.",
-                        "Чем же может быть хлопок одной ладони?",
-                );
-                $this->msg = $octokitten_koans[array_rand($octokitten_koans)];
-                return $this->msg;
+                if(!is_array($this->messages)) {
+                        $this->messages = array();
+                }
+
+                if(!isset($this->messages[$id])) {
+                        $id = JRequest::getInt('id');
+
+                        $table = $this->getTable();
+
+                        $table->load($id);
+
+                        $this->messages[$id] = $table->koan;
+                }
+
+                return $this->messages[$id];
         }
 }

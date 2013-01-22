@@ -5,4 +5,17 @@
                         <![CDATA[Jedi Octokitten says something interesting]]>
                 </message>
         </layout>
+        <fields
+                name="request"
+                addfieldpath="/administrator/components/com_octocats/models/fields"
+        >
+                <fieldset name="request">
+                        <field
+                                name="id"
+                                type="octocats"
+                                label="Octokitten koan"
+                                description="Octokitten koan description"
+                        />
+                </fieldset>
+        </fields>
 </metadata>
