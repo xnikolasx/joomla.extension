@@ -14,7 +14,7 @@ class OctocatsViewHelloWorld extends JView
         function display($tpl = null) 
         {
                 // Assign data to the view
-                $this->octocat_galaxy = "http://blogs.developerforce.com/developer-relations/files/2011/08/parallax_octocat.png"
+                $this->octocat_galaxy = "http://blogs.developerforce.com/developer-relations/files/2011/08/parallax_octocat.png";
                 $this->octocat_msg = 'I\'m the Jedi Octocat!!!';
  
                 // Display the view
