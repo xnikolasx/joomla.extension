@@ -2,7 +2,7 @@
 <metadata>
         <layout title="Octokitten default title">
                 <message>
-                        <![CDATA[COM_HELLOWORLD_HELLOWORLD_VIEW_DEFAULT_DESC]]>
+                        <![CDATA[Jedi Octokitten says something interesting]]>
                 </message>
         </layout>
 </metadata>

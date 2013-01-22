@@ -15,8 +15,8 @@ class OctocatsViewOctocats extends JView
         {
                 // Assign data to the view
                 $this->octocat_galaxy = "http://blogs.developerforce.com/developer-relations/files/2011/08/parallax_octocat.png";
-                $this->octocat_msg = 'I\'m the Jedi Octocat!!!';
- 
+                $this->octocat_msg = $this->get('Msg');
+                 
                 // Display the view
                 parent::display($tpl);
         }
