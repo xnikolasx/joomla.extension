@@ -1,8 +1,8 @@
 <?php
 /**
- * @package    Joomla.Tutorials
+ * @package    xnikolasx
  * @subpackage Components
- * @link http://docs.joomla.org/Developing_a_Model-View-Controller_Component_-_Part_1
+ * @link https://github.com/xnikolasx/joomla.extension
  * @license    GNU/GPL
  */
 
@@ -14,7 +14,7 @@ jimport('joomla.application.component.controller');
 /**
  * Hello World Component Controller
  *
- * @package    Joomla.Tutorials
+ * @package    xnikolasx
  * @subpackage Components
  */
 class HelloController extends JController

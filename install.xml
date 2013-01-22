@@ -2,16 +2,16 @@
 <install type="component" version="1.5.0">
 	<name>Hello</name>
 	<!-- The following elements are optional and free of formatting conttraints -->
-	<creationDate>2007-02-22</creationDate>
-	<author>John Doe</author>
-	<authorEmail>john.doe@example.org</authorEmail>
-	<authorUrl>http://www.example.org</authorUrl>
-	<copyright>Copyright Info</copyright>
-	<license>License Info</license>
+	<creationDate>2013-01-21</creationDate>
+	<author>xnikolasx</author>
+	<authorEmail>webglide.dev@yandex.ru</authorEmail>
+	<authorUrl>https://github.com/xnikolasx</authorUrl>
+	<copyright>what does copyright mean nowadays</copyright>
+	<license>no license as is</license>
 	<!--  The version string is recorded in the components table -->
-	<version>1.01</version>
+	<version>0.01</version>
 	<!-- The description is optional and defaults to the name -->
-	<description>Description of the component ...</description>
+	<description>Component does nothing useful... just for fun</description>
 
 	<!-- Site Main File Copy Section -->
 	<!-- Note the folder attribute: This attribute describes the folder
@@ -30,7 +30,7 @@
 
 	<administration>
 		<!-- Administration Menu Section -->
-		<menu>Hello World!</menu>
+		<menu>MySuperPuperComponent</menu>
 
 		<!-- Administration Main File Copy Section -->
 		<files folder="admin">

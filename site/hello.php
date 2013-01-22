@@ -1,9 +1,9 @@
 <?php
 /**
- * @package    Joomla.Tutorials
+ * @package    xnikolasx
  * @subpackage Components
  * components/com_hello/hello.php
- * @link http://docs.joomla.org/Developing_a_Model-View-Controller_Component_-_Part_1
+ * @link https://github.com/xnikolasx/joomla.extension
  * @license    GNU/GPL
  */
 
@@ -11,7 +11,6 @@
 defined( '_JEXEC' ) or die( 'Restricted access' );
 
 // Require the base controller
-
 require_once( JPATH_COMPONENT.DS.'controller.php' );
 
 // Require specific controller if requested
